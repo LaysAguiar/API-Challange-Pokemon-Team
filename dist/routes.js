@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.router = void 0;
+const express_1 = require("express");
+const ListPokemonsController_1 = require("./controllers/ListPokemonsController");
+const CreateTeamController_1 = require("./controllers/CreateTeamController");
+const ListTeamController_1 = require("./controllers/ListTeamController");
+const router = (0, express_1.Router)();
+exports.router = router;
+router.get("/pokemons", new ListPokemonsController_1.ListPokemonsController().handle);
+router.post("/pokeTeam", new CreateTeamController_1.CreateTeamController().handle);
+router.get("/pokeTeam", new ListTeamController_1.ListTeamController().handle);
