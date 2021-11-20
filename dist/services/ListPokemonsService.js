@@ -9,7 +9,7 @@ class ListPokemonsService {
     async execute() {
         const pokeAPI = "https://pokeapi.co/api/v2/pokemon";
         try {
-            const { data } = await axios_1.default.get(`${pokeAPI}?limit=20&offset=0/`);
+            const { data } = await axios_1.default.get(`${pokeAPI}?limit=30&offset=0/`);
             const { next, previous, results } = data;
             const arrPokemons = results.map((item) => {
                 const urlSplited = item.url.split("/");

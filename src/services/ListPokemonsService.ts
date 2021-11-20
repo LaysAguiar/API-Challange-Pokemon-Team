@@ -7,13 +7,13 @@ class ListPokemonsService {
 
     try {
 
-      const { data } = await axios.get(`${pokeAPI}?limit=20&offset=0/`);
+      const { data } = await axios.get(`${pokeAPI}?limit=30&offset=0/`);
 
       const { next, previous, results } = data;
 
       const arrPokemons = results.map((item) => {
         const urlSplited = item.url.split("/");
-      
+
 
         return {
           id: Number(urlSplited?.[6]),
@@ -26,7 +26,7 @@ class ListPokemonsService {
         arrPokemons.map(async (element) => {
           const { data } = await axios.get(`${pokeAPI}/${element.id}`);
           const { types, sprites } = data;
-          
+
           return {
             id: element.id,
             name: element.name,
