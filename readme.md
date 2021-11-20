@@ -65,7 +65,7 @@ $ git clone https://github.com/LaysAguiar/API-Challange-Pokemon-Team.git
 
 ROUTES-API
 
-
+<a href="https://insomnia.rest/run/?label=&uri=https%3A%2F%2Fgithub.com%2FLaysAguiar%2FAPI-Challange-Pokemon-Team%2Fblob%2Fmain%2Fglobal%2Fjson%2Fpoketeam" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 
 #### Iniciando o Front-End
 
